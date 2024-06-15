@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\Variate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\productsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\productsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\data\\variatecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\data\\variatecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\data\\dataextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\data\\dataextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\dtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\dtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|c:\\dev\\variate\\variate\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A105DB-75E5-4575-BC3D-9B4705C2BB6A}|Variate\\Variate.csproj|solutionrelative:variate\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\appsettings.json",
+              "RelativeDocumentMoniker": "Variate\\appsettings.json",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\appsettings.json",
+              "RelativeToolTip": "Variate\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-07T19:12:48.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VariateContext.cs",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\Data\\VariateContext.cs",
+              "RelativeDocumentMoniker": "Variate\\Data\\VariateContext.cs",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\Data\\VariateContext.cs",
+              "RelativeToolTip": "Variate\\Data\\VariateContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T19:11:51.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataExtentions.cs",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\Data\\DataExtentions.cs",
+              "RelativeDocumentMoniker": "Variate\\Data\\DataExtentions.cs",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\Data\\DataExtentions.cs",
+              "RelativeToolTip": "Variate\\Data\\DataExtentions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T19:10:11.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateProductDto.cs",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\Dtos\\UpdateProductDto.cs",
+              "RelativeDocumentMoniker": "Variate\\Dtos\\UpdateProductDto.cs",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\Dtos\\UpdateProductDto.cs",
+              "RelativeToolTip": "Variate\\Dtos\\UpdateProductDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T19:09:09.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsEndPoints.cs",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\ProductsEndPoints.cs",
+              "RelativeDocumentMoniker": "Variate\\ProductsEndPoints.cs",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\ProductsEndPoints.cs",
+              "RelativeToolTip": "Variate\\ProductsEndPoints.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T18:16:36.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\Program.cs",
+              "RelativeDocumentMoniker": "Variate\\Program.cs",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\Program.cs",
+              "RelativeToolTip": "Variate\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T17:02:48.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateProductDto.cs",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\Dtos\\CreateProductDto.cs",
+              "RelativeDocumentMoniker": "Variate\\Dtos\\CreateProductDto.cs",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\Dtos\\CreateProductDto.cs",
+              "RelativeToolTip": "Variate\\Dtos\\CreateProductDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T19:06:15.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\dev\\Variate\\Variate\\Dtos\\ProductDto.cs",
+              "RelativeDocumentMoniker": "Variate\\Dtos\\ProductDto.cs",
+              "ToolTip": "C:\\dev\\Variate\\Variate\\Dtos\\ProductDto.cs",
+              "RelativeToolTip": "Variate\\Dtos\\ProductDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T18:12:53.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
