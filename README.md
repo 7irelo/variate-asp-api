@@ -45,7 +45,7 @@ Welcome to the **E-Commerce Web App API** project. This API provides the backend
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/7irelo/asp.net-e-commerce-api.git
+    git clone https://github.com/7irelo/asp-net-api.git
     cd asp.net-e-commerce-api
     ```
 
