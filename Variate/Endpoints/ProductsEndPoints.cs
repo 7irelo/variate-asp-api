@@ -1,66 +1,71 @@
-using Variate.Entities;
-using Variate.Dtos;
-using Variate.Data;
-using Variate.Mapping;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-namespace Variate.Endpoints;
+using Variate.Data;
+using Variate.Dtos;
+using Variate.Entities;
+using Variate.Mapping;
 
-public static class ProductsEndpoints
+namespace Variate.Endpoints
 {
-    public static RouteGroupBuilder MapProductsEndpoints(this WebApplication app)
+    public static class ProductsEndpoints
     {
-        RouteGroupBuilder group = app.MapGroup("products").WithParameterValidation();
-
-        const string GetProductEndpointName = "GetProduct";
-
-        group.MapGet("/", async (VariateContext dbContext) => 
-            await dbContext.Products.Include(product => product.Category)
-            .Select(product => product.ToProductSummaryDto())
-            .AsNoTracking().ToListAsync());
-
-        group.MapGet("/{id}", async (int id, VariateContext dbContext) => 
+        public static RouteGroupBuilder MapProductsEndpoints(this WebApplication app)
         {
-            Product? product = await dbContext.Products.FindAsync(id);
+            RouteGroupBuilder group = app.MapGroup("products").WithParameterValidation();
 
-            return product is null ? Results.NotFound() : Results.Ok(product.ToProductDetailsDto());
-        })
-        .WithName(GetProductEndpointName);
+            const string GetProductEndpointName = "GetProduct";
 
-        group.MapPost("/", async (CreateProductDto newProduct, VariateContext dbContext) => {
-            Product product = newProduct.ToEntity();
-            // product.Category = dbContext.Categories.Find(newProduct.CategoryId);
-
-            dbContext.Products.Add(product);
-            await dbContext.SaveChangesAsync();
-
-            return Results.CreatedAtRoute(GetProductEndpointName, new {id = product.Id}, product.ToProductDetailsDto());
-        });
-
-        group.MapPut("/{id}", async (int id, UpdateProductDto updatedProduct, VariateContext dbContext) => 
-        {
-            var existingProduct = await dbContext.Products.FindAsync(id);
-
-            if (existingProduct is null)
+            group.MapGet("/", async (VariateContext dbContext) =>
             {
-                return Results.NotFound();
-            }
+                var products = await dbContext.Products
+                    .Include(product => product.Category)
+                    .Select(product => product.ToProductSummaryDto())
+                    .AsNoTracking()
+                    .ToListAsync();
 
-            dbContext.Entry(existingProduct).CurrentValues.SetValues(updatedProduct.ToEntity(id));
-            await dbContext.SaveChangesAsync();
+                return Results.Ok(products);
+            });
 
-            return Results.NoContent();
-        });
+            group.MapGet("/{id}", async (int id, VariateContext dbContext) =>
+            {
+                var product = await dbContext.Products.FindAsync(id);
 
+                return product == null ? Results.NotFound() : Results.Ok(product.ToProductDetailsDto());
+            }).WithName(GetProductEndpointName);
 
-        group.MapDelete("/{id}", async (int id, VariateContext dbContext) => 
-        {
-            await dbContext.Products.Where(product => product.Id == id)
-                     .ExecuteDeleteAsync();
+            group.MapPost("/", async (CreateProductDto newProduct, VariateContext dbContext) =>
+            {
+                var product = newProduct.ToEntity();
+                dbContext.Products.Add(product);
+                await dbContext.SaveChangesAsync();
 
-            return Results.NoContent();
-        });
+                return Results.CreatedAtRoute(GetProductEndpointName, new { id = product.Id }, product.ToProductDetailsDto());
+            });
 
-        return group;
+            group.MapPut("/{id}", async (int id, UpdateProductDto updatedProduct, VariateContext dbContext) =>
+            {
+                var existingProduct = await dbContext.Products.FindAsync(id);
 
+                if (existingProduct == null)
+                    return Results.NotFound();
+
+                dbContext.Entry(existingProduct).CurrentValues.SetValues(updatedProduct.ToEntity(id));
+                await dbContext.SaveChangesAsync();
+
+                return Results.NoContent();
+            });
+
+            group.MapDelete("/{id}", async (int id, VariateContext dbContext) =>
+            {
+                await dbContext.Products
+                    .Where(product => product.Id == id)
+                    .ExecuteDeleteAsync();
+
+                return Results.NoContent();
+            });
+
+            return group;
+        }
     }
 }
