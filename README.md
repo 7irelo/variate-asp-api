@@ -45,8 +45,8 @@ Welcome to the **E-Commerce Web App API** project. This API provides the backend
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/7irelo/asp-net-api.git
-    cd asp.net-e-commerce-api
+    git clone https://github.com/7irelo/variate-asp-api.git
+    cd variate-asp-api
     ```
 
 2. **Open the Solution**:
